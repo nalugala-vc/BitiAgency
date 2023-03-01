@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.mainSection{
+    display: flex;
+}
+#logo{
+    color: white;
+    font-size: 40px;
+    font-family: 'Just Another Hand';
+}
+#logo b{
+    color: #c40e0d;
+    font-family: 'Just Another Hand';
+}
+nav{
+    padding: 20px;
+}
+.mainNav{
+    background-color: #222020;
+    width: 18vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.mainNav nav ul li{
+    padding: 10px 10px;
+    list-style: none;
+    margin-top: 10px;
+
+}
+.mainNav nav ul #active{
+    background-color: #422d2d;
+    color: white;
+}
+.mainNav nav ul #active a{
+    color: white;
+}
+.smallScreenNavs{
+    position: absolute;
+    width: 100vw;
+    display: none;
+}
+.smallScreenNavs nav{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.smallScreenNavs nav #iconClick .fa-solid{
+    color: white;
+}
+.smallScreenNavs nav ul{
+    background-color: #111111;
+    padding-left: 10px;
+    opacity: 0.8;
+}
+.smallScreenNavs nav ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+.smallScreenNavs nav ul #active a{
+    color: #c40e0d;
+}
+.smallScreenNavs nav ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+.smallScreenNavs .fa-solid{
+    color: #c40e0d;
+}
+.mainNav nav ul li a{
+    text-decoration: none;
+    color: #777776;
+}
+.mainNav nav ul li a:hover{
+    color: #c40e0d;
+}
+.mainNav nav ul li a .fa-solid{
+    margin-right: 10px;
+}
+.mainContent{
+    padding: 20px;
+    width: 63vw;
+    background-color: #111111;
+}
+.profileNav{
+    height: 100vh;
+    width: 18vw;
+    background-color: #222020;
+}
+.profileNav img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-bottom: 40px;
+}
+.profileNav .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.profileNav .profile h4{
+    color: white;
+    margin-bottom: 50px;
+}
+.profileNav .profile p{
+    color: #777776;
+    font-size: 13px;
+}
+.profileNav .bottom{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+.profileNav .flex{
+    width: 18vw;
+    display: flex;
+    justify-content: center;
+}
+.profileNav .bottom button,.fillInfo .bottom button{
+    height: 40px;
+    width: 15vw;
+    color: white;
+    background-color: #c40e0d;
+    border: none;
+}
+.heading h2{
+    color: white;
+}
+.heading p{
+    color: #777776;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.formDivs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222020;
+    padding:10px 20px;
+}
+.fillInfo>*{
+    margin-bottom: 10px;
+}
+.formDivs .fillInfo h3{
+    color: white;
+}
+.formDivs .fillInfo p{
+    color: #777776;
+    font-size: 13px;
+}
+.formDivs img{
+    width: 30vw;
+}
+#progress{
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+.progress h3{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.progress #progress .yearProgress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.progress #progress .yearProgress p{
+    color: #777776;
+    font-size: 13px;
+}
+.progress #progress .yearProgress .color{
+    height: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 20px;
+    background-color: #c40e0d;
+}
+.progress #progress .yearProgress .noColor{
+    background-color: #777776;
+    margin: 5px;
+    height: 20px;
+    border-radius: 5px;
+    width: 20px;
+}
+.seeAll{
+    margin-top: 30px;
+}
+.seeAll button{
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    color: #c40e0d;
+    border: none;
+}
+.feedbackDivs{
+    height: 80vh;
+    overflow-y: scroll;
+}
+.feedbackDivs>*{
+    margin-bottom: 20px;
+}
+.feedbackDivs::-webkit-scrollbar{
+    width: 6px;
+}
+.feedbackDivs .feed{
+    background-color: #222020;
+    padding: 20px;
+}
+.feedbackDivs .feed span b{
+    color: #c40e0d;
+    font-size: 15px;
+}
+.feedbackDivs .feed span a{
+    color: white;
+    font-size: 13px;
+}
+.feedbackDivs .feed span{
+    margin-bottom: 5px;
+}
+.noItemsDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.noItemsDiv img{
+    height: 20vw;
+}
+.feedbackDivs .feed span p{
+    color: #777776;
+    font-size: 14px;
+}
+.viewUsersTable table{
+    border-radius: 20px;
+    background-color: #222020;
+    padding:5px 20px;
+}
+.viewUsersTable table{
+    padding: 5px;
+    color: #c40e0d;
+}
+.viewUsersTable table td{
+    padding: 15px 20px;
+    color: #777776;
+    font-size: 13px;
+    border-top: 1px solid #777776;
+}
+.viewUsersTable table tr:hover{
+    background-color: #422d2d;
+    color: #111111;
+}
+.viewUsersTable,.viewUsersTables{
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.viewUsersTable table th{
+    padding: 5px 10px;
+}
+.viewUsersTable{
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+.viewUsersTable table button{
+    height: 30px;
+    width: 70px;
+    background-color: transparent;
+}
+.viewUsersTable table th{
+    font-size: 15px;
+}
+.viewUsersTable table td{
+    font-size: 12px;
+}
+.viewUsersTable table td #gr{
+    border: 1px solid green;
+    color: green;
+}
+.viewUsersTable table td #rd{
+    border: 1px solid #c40e0d;
+    color: #c40e0d;
+}
+.viewUsersTable table #accept{
+    color: green;
+}
+.viewUsersTable table #decline{
+    color: #c40e0d;
+}
+.viewUsersTable table #pending{
+    color: #777776;
+}
+.viewUsersTable table a{
+    color: green;
+    text-decoration: none;
+}
+.registrationForm .row .input input{
+    color: #777776;
+}
+.registrationForm .row .input input{
+    padding:0 10px;
+}
+.red{
+    color: #c40e0d;
+}
+.inputBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.inputBtn button{
+    background-color: #c40e0d;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 200px;
+}
+.registrationForm .row{
+    display: flex;
+    justify-content: center;
+}
+.registrationForm .row .input{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+.registrationForm .row .input span{
+    color: white;
+}
+.registrationForm .row .input input,.registrationForm .row .input select{
+    height: 40px;
+    width: 300px;
+    background-color: #222020;
+    border: none;
+}
+.registrationForm .row .input input{
+    color: #777776;
+}
+.registrationForm .row .input select{
+    color: #777776;
+    width: 320px;
+    padding: 0 10px;
+  }
+.registrationForm .row .input select option { color: #777776; }
+.registrationForm .row .input select option:first-child{
+  color: #777776;
+}
+.registrationForm .row .input .fa-solid{
+    color: #c40e0d;
+    margin-right: 10px;
+}
+.bottom a{
+    text-decoration: none;
+    color: white;
+}
+.alert-success{
+    color: green;
+}
+.seeAll a{
+    text-decoration: none;
+    color: #c40e0d;
+}
+
+.feedbackDivs::-webkit-scrollbar{
+    width: 6px;
+}
+.feedbackDivs::-webkit-scrollbar-thumb {
+    background-color: #c40e0d;
+  }
+   
+  .feedbackDivs::-webkit-scrollbar-track {
+    background-color: #ffffff;
+  }
+.viewUsersTable::-webkit-scrollbar{
+    width: 6px;
+}
+.viewUsersTable::-webkit-scrollbar-thumb {
+    background-color: #c40e0d;
+  }
+   
+  .viewUsersTable::-webkit-scrollbar-track {
+    background-color: #ffffff;
+  }
+
+  @media screen and (max-width:800px) {
+    .mainNav nav ul li a{
+        font-size: 13px;
+    }
+  }
+
+@media screen and (max-width:700px) {
+    .formDivs img{
+        display: none;
+    }
+    
+    
+}
+@media screen and (max-width:650px) {
+    .mainNav{
+        display: none;
+    }
+    .profileNav{
+        display: none;
+    }
+    .mainContent{
+        width: 100vw;
+        height: 100vh;
+    }
+    .fillInfo .bottom button{
+        width: 200px;
+    }
+    .smallScreenNavs{
+        display: block;
+    }
+    .heading{
+        padding-top: 60px;
+    }
+
+}

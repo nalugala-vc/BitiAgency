@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111111;
+    transition: 0.5s;
+}
+body.active{
+    background-color: #c40e0d;
+}
+.red{
+    color: #c40e0d;
+}
+.container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+    
+}
+.blackBg{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+    /* background: #222020; */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(250,250,250,0.15);
+}
+.blackBg .box{
+    position: relative;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+}
+
+.blackBg .box h2{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.blackBg .box .brands{
+    display: flex;
+}
+.blackBg .box .brands div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.3);
+
+}
+.blackBg .box .brands div .fa-brands{
+    color:rgba(255, 255, 255) ;
+}
+.blackBg .box button{
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: white;
+    color: #222020;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+.blackBg .box img{
+    height: 50px;
+}
+.formBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 45px rgba(250,250,250,0.15);
+    transition: 0.5s ease-in-out;
+}
+.formBx.active{
+    left: 50%;
+}
+.form form,.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input span{
+    font-size: 14px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.input input,.input select{
+    height: 40px;
+    width: 250px;
+}
+.signupForm .input button{
+    height: 40px;
+    width: 150px;
+    background-color:#111111;
+    color: white;
+}
+.signinForm .input button{
+    height: 40px;
+    width: 150px;
+    background-color:#c40e0d;
+    border: none;
+    color: white;
+}
+.form p{
+    color: #222020;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.form.active{
+    display: flex;
+}
+.form.inactive{
+    display: none;
+}
+.alert-success{
+    color: green;
+}

@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.adminPage{
+    display: flex;
+}
+#logo{
+    color: white;
+    font-size: 40px;
+    font-family: 'Just Another Hand';
+}
+#logo b{
+    color: #c40e0d;
+    font-family: 'Just Another Hand';
+}
+nav{
+    padding: 20px;
+}
+.navDiv{
+    background-color: #222020;
+    width: 18vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navDiv nav ul li{
+    padding: 10px 10px;
+    list-style: none;
+    margin-top: 10px;
+
+}
+.navDiv nav ul #active{
+    background-color: #422d2d;
+    color: white;
+}
+.navDiv nav ul #active a{
+    color: white;
+}
+.navDiv nav ul li a{
+    text-decoration: none;
+    color: #777776;
+}
+.navDiv nav ul li a:hover{
+    color: #c40e0d;
+}
+.navDiv nav ul li a .fa-solid{
+    margin-right: 10px;
+}
+.navDiv .profile span{
+    position: absolute;
+    font-size: 13px;
+    color: white;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+.mainContent{
+    width: 82vw;
+    background-color: #111111;
+}
+#mainContent{
+    height: 85vh;
+}
+#mainContent::-webkit-scrollbar{
+    width: 6px;
+}
+.mainContent .profile img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.headStrip{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+.head h1{
+    color: white;
+}
+.head p{
+    color: #777776;
+    font-size: 13px;
+}
+.iconsDiv,.iconsDiv .icons{
+    display: flex;
+}
+.iconsDiv{
+    align-items: center;
+}
+.iconsDiv>*{
+    margin-left: 10px;
+}
+.icons div{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222020;
+}
+.icons .fa-solid{
+    color: #777776;
+}
+.divTiles{
+    margin:0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.divTiles a{
+    text-decoration: none;
+}
+.tile{
+    height: 29vh;
+    width: 18.5vw;
+    background-color: #222020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tile:hover{
+    background-color: #422d2d;
+}
+.tile img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 18vh;
+}
+.tile h2{
+    color: #777776;
+    font-size: 18px;
+}
+
+.otherContent{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.usersTable,.appointmentDivs{
+    height: 45vh;
+    overflow-y: scroll;
+}
+.usersTable::-webkit-scrollbar{
+    size: 6px;
+}
+.appointmentDivs::-webkit-scrollbar{
+    size: 6px;
+}
+.otherContent h2{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+.appointmentsTable h2{
+    margin-left: 30px;
+}
+.otherContent .usersTable table,.viewUsersTable table{
+    border-radius: 20px;
+    background-color: #222020;
+    padding:5px 20px;
+}
+.otherContent .usersTable table th,.viewUsersTable table{
+    padding: 5px;
+    color: #c40e0d;
+}
+.otherContent .usersTable table td,.viewUsersTable table td{
+    padding: 10px 10px;
+    color: #777776;
+    font-size: 13px;
+    border-top: 1px solid #777776;
+}
+.otherContent .usersTable table tr:hover,.viewUsersTable table tr:hover{
+    background-color: #422d2d;
+    color: #111111;
+}
+.otherContent .usersTable table img,.viewUsersTable table img{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+.appointmentsTable .diva{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+    background-color: #222020;
+    margin: 10px 30px;
+}
+.appointmentsTable .diva:hover{
+    background-color: #422d2d;
+}
+.appointmentsTable .diva .row1 span{
+    color: #777776;
+    font-size: 14px;
+
+}
+.appointmentsTable .diva .row1,.appointmentsTable .diva .row2{
+    display: flex;
+    margin: 10px 20px;
+    flex-direction: column;
+}
+.appointmentsTable .diva .row2 button{
+    height: 40px;
+    width: 100px;
+    margin: 2px;
+}
+.appointmentsTable .diva .row2 #accept{
+    border: 1px solid green;
+    color: green;
+    background-color: transparent;
+}
+.appointmentsTable .diva .row2 #decline{
+    border: 1px solid #c40e0d;
+    background-color: transparent;
+    color: #c40e0d;
+}
+.registrationForm .row{
+    display: flex;
+    justify-content: center;
+}
+.registrationForm .row .input{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+.registrationForm .row .input span{
+    color: white;
+}
+.noItemsDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.noItemsDiv img{
+    height: 20vw;
+}
+.appointmentDivs .noItemsDiv img,.usersTable .noItemsDiv img{
+    height: 10vw;
+}
+.registrationForm .row .input input,.registrationForm .row .input select{
+    height: 40px;
+    width: 300px;
+    background-color: #222020;
+    border: none;
+}
+.registrationForm .row .input input{
+    padding:0 10px;
+}
+.inputBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.inputBtn button{
+    background-color: #c40e0d;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 200px;
+}
+.registrationForm .row .input input{
+    color: #777776;
+}
+.registrationForm .row .input select{
+    color: #777776;
+    width: 320px;
+    padding: 0 10px;
+  }
+.registrationForm .row .input select option { color: #777776; }
+.registrationForm .row .input select option:first-child{
+  color: #777776;
+}
+.registrationForm .row .input .fa-solid{
+    color: #c40e0d;
+    margin-right: 10px;
+}
+.viewUsersTable,.viewUsersTables{
+    height: 85vh;
+    overflow-y: scroll;
+}
+
+.viewUsersTable a{
+    text-decoration: none;
+}
+
+.viewUsersTable table th{
+    padding: 5px 10px;
+}
+.viewUsersTable{
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+.viewUsersTable table button{
+    height: 30px;
+    width: 70px;
+    background-color: transparent;
+}
+.viewUsersTable table th{
+    font-size: 15px;
+}
+.viewUsersTable table td{
+    font-size: 12px;
+}
+.viewUsersTable table td #gr{
+    border: 1px solid green;
+    color: green;
+}
+.viewUsersTable table td #rd{
+    border: 1px solid #c40e0d;
+    color: #c40e0d;
+}
+.viewUsersTable.att table th {
+    font-size: 17px;
+}
+.viewUsersTable.att table td{
+    font-size: 14px;
+}
+.viewUsersTable table #ex{
+    max-width: 300px;
+}
+.viewUsersTable table #accept{
+    color: green;
+}
+.viewUsersTable table #decline{
+    color: #c40e0d;
+}
+.viewUsersTable table #pending{
+    color: #777776;
+}
+.red{
+    color: #c40e0d;
+}
+.registrationForm textarea{
+    background-color: #222020;
+    color: #777776;
+    padding: 10px;
+    border: none;
+}
+.viewUsersTable table td a{
+    text-decoration: none;
+    color: #c40e0d;
+}
+.viewUsersTable.submitted table td,.viewUsersTable.submitted table th{
+    padding: 20px;
+}
+.alert-success{
+    color: green;
+}
+.link a{
+    color: #c40e0d;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.feedbackDivs::-webkit-scrollbar{
+    width: 6px;
+}
+.feedbackDivs::-webkit-scrollbar-thumb {
+    background-color: #c40e0d;
+  }
+   
+  .feedbackDivs::-webkit-scrollbar-track {
+    background-color: #ffffff;
+  }
+.viewUsersTable::-webkit-scrollbar{
+    width: 6px;
+}
+.viewUsersTable::-webkit-scrollbar-thumb {
+    background-color: #c40e0d;
+  }
+   
+  .viewUsersTable::-webkit-scrollbar-track {
+    background-color: #ffffff;
+  }
+  .divTiles a{
+    color: #777776;
+  }
+
+
+
+
+
+
