@@ -21,7 +21,7 @@ BitiAgency provides the following features:
 * Policy purchase and payment
 * Policy management (view, edit, and cancel policies)
 ## Screenshots
-Here are some screenshots of the BitiAgency website:
+Here are some screenshots of the BitiAgency Insuarance website:
 ### homepage
 ![bitiagency](https://user-images.githubusercontent.com/98637307/234295048-d36899b9-695b-4117-b93f-2862a34186f5.png)
 ### landingpage
